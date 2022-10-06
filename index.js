@@ -19,7 +19,7 @@ fetch(url, options)
         var jsonContent = JSON.stringify(json.response)
         console.log(json.response)
 
-        fs.writeFile("output.json", jsonContent, 'utf8', function(err){
+        fs.writeFile("output.txt", jsonContent, 'utf8', function(err){
 
             if(err){
                 console.log("error")
