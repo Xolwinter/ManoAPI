@@ -6,7 +6,7 @@ import pandas as pd
 
 # Press Maj+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-def scrap(competition):
+def scrap(competition,equipeP):
     print("competition",competition)
     if(competition=="url"):
         return None
@@ -21,6 +21,7 @@ def scrap(competition):
     equipes = bs.find_all('div', {'class':'scoreboard_contestantLabel'})
     equipeFinal = list()
     equipetemp2 = list()
+    print("equipe",equipes)
     for equipe in equipes:
         index1 = str(equipe)[2:].find(">")
         index2 = str(equipe)[2:].find("<")
@@ -47,7 +48,14 @@ def scrap(competition):
 
     match = list()
     i = 0
+    j=0
+    print("equipefinale", equipeFinal)
+    print("coteFinale", cotesFinal)
+    while j < len(cotesFinal):
+        if(cotesFinal[j].indexOf("Parier"))
+        
     while i < len(equipeFinal):
+        
         match.append([equipeFinal[i],cotesFinal[i*2]])
         i+=1
     print("match returned", match)
