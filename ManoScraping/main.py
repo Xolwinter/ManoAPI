@@ -7,7 +7,6 @@ import pandas as pd
 # Press Maj+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 def scrap(competition):
-    print("competition",competition)
     if(competition=="url"):
         return None
     if(competition==""):
@@ -21,7 +20,6 @@ def scrap(competition):
     equipes = bs.find_all('div', {'class':'scoreboard_contestantLabel'})
     equipeFinal = list()
     equipetemp2 = list()
-    print("equipe",equipes)
     for equipe in equipes:
         index1 = str(equipe)[2:].find(">")
         index2 = str(equipe)[2:].find("<")
@@ -55,7 +53,6 @@ def scrap(competition):
         
         match.append([equipeFinal[i],cotesFinal[i*2]])
         i+=1
-    print("match returned", match)
     return match
 
 def findCote(equipe,matches):
@@ -70,11 +67,8 @@ def findCote(equipe,matches):
 
 def writeCsv(csvUrl,equipe,cote):
 
-    print(df.head())
     index= df.index[df['Equipe']==equipe]
-    print(index[0])
     df.loc[index[0],"Cotes"] = cote
-    print(df)
 
 
 
@@ -90,7 +84,6 @@ def getInput(csvUrl):
         for row in reader:
             data.append(row[0].split(";"))
             #data.append(str(row).split(";"))
-    print(data)
     return data
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
@@ -98,7 +91,6 @@ if __name__ == '__main__':
     input = getInput("ManoProno_Teams.csv")
     df = pd.read_csv("ManoProno_Teams.csv", sep=";", encoding="latin1")
     for inputTemp in input:
-        print("inputTemp",inputTemp[3])
         match = scrap(inputTemp[1])
         if(match==None):
             print("Error : Invalid Ligue")
@@ -110,7 +102,5 @@ if __name__ == '__main__':
             continue
         writeCsv(df,inputTemp[3], cote)
         print("ManoProno_Teams.csv",inputTemp[3],cote)
-        #print(match)
-        #print(cote)
-    df.to_csv("ManoProno_Teams.csv", index=False, encoding="latin1", sep=";")
+    df.to_csv("E:/Budget/ManoProno_Teams.csv", index=False, encoding="latin1", sep=";")
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
