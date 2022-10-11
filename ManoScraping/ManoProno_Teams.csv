@@ -1,38 +1,38 @@
 codeLigue;url;Ligue;Equipe;LigueDesChampions;Cotes;nomEquipe
-albaLigue1;;Albanie;Tirana;0;
-algeLigue1;;Algérie;Belouizdad;0;
-azerLigue1;https://www.betclic.fr/football-s1/bulgarie-a-pfg-c548;Bulgarie;Ludogorets Razgrad;0;1,57;Ludogorets
+albaLigue1;;Albanie;Tirana;0;;
+algeLigue1;;Algérie;Belouizdad;0;;
+azerLigue1;https://www.betclic.fr/football-s1/bulgarie-a-pfg-c548;Bulgarie;Ludogorets Razgrad;0;1,58;Ludogorets
 bulgLigue1;https://www.betclic.fr/football-s1/azerbaidjan-premyer-liqasi-c8405;Azeirbadjain;Qarabağ;0;;Quarabag
-croaLigue;https://www.betclic.fr/football-s1/croatie-1-hnl-c531;Croatie;Dinamo Zagreb;0;1,22;Din, Zaagreb
+croaLigue;https://www.betclic.fr/football-s1/croatie-1-hnl-c531;Croatie;Dinamo Zagreb;0;1,21;Din, Zaagreb
 daneLigue1;https://www.betclic.fr/football-s1/danemark-superliga-c88;Danemark;Copenhague;1;2,02;FC Copenague
-bresLigue1;https://www.betclic.fr/football-s1/bresil-serie-a-c187;Brésil;Atletico Mineiro;0;1,39;Atlético Mineiro
-roumLigue1;https://www.betclic.fr/football-s1/roumanie-liga-1-c552;Roumanie;CFR Cluj;0;1,97;CFR Jul
-belgLigue1;https://www.betclic.fr/football-s1/belgique-division-1a-c26;Belgique;Club Bruges;1;2,17;Brugge
+bresLigue1;https://www.betclic.fr/football-s1/bresil-serie-a-c187;Brésil;Atletico Mineiro;0;1,41;Atlético Mineiro
+roumLigue1;https://www.betclic.fr/football-s1/roumanie-liga-1-c552;Roumanie;CFR Cluj;0;2,05;CFR Jul
+belgLigue1;https://www.betclic.fr/football-s1/belgique-division-1a-c26;Belgique;Club Bruges;1;2,35;Brugge
 ukraLigue1;https://www.betclic.fr/football-s1/ukraine-premier-league-c530;Ukraine;Shakhtar Donetsk;1;;Shaktar
 bundesLiga;https://www.betclic.fr/football-s1/allemagne-bundesliga-c5;Allemagne;RB Leipzig;0;1,41;Leibzig
-bundesLiga;https://www.betclic.fr/football-s1/allemagne-bundesliga-c5;Allemagne;Dortmund;1;2,25;Dortmund
-bundesLiga;https://www.betclic.fr/football-s1/allemagne-bundesliga-c5;Allemagne;Bayern Munich;1;1,23;Bayern
-laLiga;https://www.betclic.fr/football-s1/espagne-liga-primera-c7;Espagne;Barcelone;1;1,31;Barcelone
+bundesLiga;https://www.betclic.fr/football-s1/allemagne-bundesliga-c5;Allemagne;Dortmund;1;2,30;Dortmund
+bundesLiga;https://www.betclic.fr/football-s1/allemagne-bundesliga-c5;Allemagne;Bayern Munich;1;1,24;Bayern
+laLiga;https://www.betclic.fr/football-s1/espagne-liga-primera-c7;Espagne;Barcelone;1;1,08;Barcelone
 laLiga;https://www.betclic.fr/football-s1/espagne-liga-primera-c7;Espagne;Atletico Madrid;1;2,88;Atlético Madrid
-laLiga;https://www.betclic.fr/football-s1/espagne-liga-primera-c7;Espagne;Real Madrid;1;2,35;Real
-ligue1;https://www.betclic.fr/football-s1/ligue-1-uber-eats-c4;France Ligue 1;Paris SG;1;1,31;PSG
+laLiga;https://www.betclic.fr/football-s1/espagne-liga-primera-c7;Espagne;Real Madrid;1;2,38;Real
+ligue1;https://www.betclic.fr/football-s1/ligue-1-uber-eats-c4;France Ligue 1;Paris SG;1;1,32;PSG
 ligue1;https://www.betclic.fr/football-s1/ligue-2-bkt-c19;France Ligue 1;Caen;0;2,38;Caen
 ligue2;https://www.betclic.fr/football-s1/ligue-2-bkt-c19;France Ligue 2;Bordeaux;0;2,70;Bordeaux
-serieA;https://www.betclic.fr/football-s1/italie-serie-a-c6;Italie;Naples;1;1,40;Naples
+serieA;https://www.betclic.fr/football-s1/italie-serie-a-c6;Italie;Naples;1;1,31;Naples
 serieA;https://www.betclic.fr/football-s1/italie-serie-a-c6;Italie;Inter;1;1,31;Inter
-serieA;https://www.betclic.fr/football-s1/italie-serie-a-c6;Italie;Milan;1;1,57;Ac milan
-premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c3;Angleterre;Liverpool;1;4,30;Liverpool
-premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c3;Angleterre;Chelsea;1;1,82;Chelsea
-premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c4;Angleterre;Manchester City;1;M. City
+serieA;https://www.betclic.fr/football-s1/italie-serie-a-c6;Italie;Milan;1;1,60;Ac milan
+premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c3;Angleterre;Liverpool;1;3,55;Liverpool
+premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c3;Angleterre;Chelsea;1;1,83;Chelsea
+premierLigue;https://www.betclic.fr/football-s1/angl-premier-league-c4;Angleterre;Manchester City;1;M. City;
 ligaPrimeira;https://www.betclic.fr/football-s1/portugal-primeira-liga-c32;Portugal;FC Porto;0;;Porto
 ligaPrimeira;https://www.betclic.fr/football-s1/portugal-primeira-liga-c32;Portugal;Benfica;1;;Benfica
 ligaPrimeira;https://www.betclic.fr/football-s1/portugal-primeira-liga-c32;Portugal;Sporting Portugal;1;;Sporting
 paysLigue1;https://www.betclic.fr/football-s1/pays-bas-eredivisie-c21;Pays Bas;Ajax;1;;Ajax
 grecLigue1;https://www.betclic.fr/football-s1/grece-superleague-c38;Grèce;Olympiakos;0;1,80;Olympiakos
-israLigue1;https://www.betclic.fr/football-s1/israel-premier-league-c1876;Israël;Hapoel Beer Sheva;0;1,58;H. Beer Sheva
+israLigue1;https://www.betclic.fr/football-s1/israel-premier-league-c1876;Israël;Hapoel Beer Sheva;0;1,62;H. Beer Sheva
 norvLigue0;https://www.betclic.fr/football-s1/norvege-eliteserien-c156;Norvège;Bodø/Glimt;0;;Bodo/Gimt
-norvLigue1;https://www.betclic.fr/football-s1/norvege-eliteserien-c156;Norvège;Molde;0;;Molde
+norvLigue1;https://www.betclic.fr/football-s1/norvege-eliteserien-c156;Norvège;Molde;0;2,35;Molde
 japoLigue1;https://www.betclic.fr/football-s1/japon-j-league-c503;Japon;Yokohama;0;;Yokohama
 autrLigue1;https://www.betclic.fr/football-s1/autriche-bundesliga-c35;Autriche;Salzbourg;1;1,62;Red Bull
-ecosLigue1;https://www.betclic.fr/football-s1/ecosse-premiership-c33;Ecosse;Rangers;1;1,25;Rangers
+ecosLigue1;https://www.betclic.fr/football-s1/ecosse-premiership-c33;Ecosse;Rangers;1;1,26;Rangers
 coreLigue1;https://www.betclic.fr/football-s1/coree-du-sud-k-league-c3304;Corée;Ulsan Hyundai;0;2,18;Ulsan Hyundai
