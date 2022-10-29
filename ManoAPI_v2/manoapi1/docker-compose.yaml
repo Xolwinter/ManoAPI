@@ -44,7 +44,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      ./client/src:/app/src
+      - ./client/src:/app/src
     links:
       - server
     command: yarn start
