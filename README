@@ -1,5 +1,12 @@
-Name :
 Projet de création d'API dans le cadre du cours [DSIA-5102A] dispensé à l'ESIEE Paris.
 
-Mise en contexte :
-- Dans le but 
+Description du projet :
+
+Dans le but d'obtenir plus rapidement les côtes des matchs qui nous intéressent, un premier algorithme se charge de les récupérer en utilisant un crawler.
+
+Dans un second temps, l'objectif de ce projet était de se familiariser avec la création d'API via Docker. Pour ce faire, j'ai décidé de créer 3 instances Docker.
+La première est une simple base de données, isolé pour éviter tout accès extérieur à l'API.
+La seconde est l'API en elle même. Paramêtrer pour écouter les requêtes faites sur le port 3005, elle fournit à toute utilisateur des informations sur les données
+stockées dans la base de données SQL.
+La troisième instance n'est d'autre qu'un interface web très simplifié, créer à l'aide de React, et fournissant une interface permettant des appels à l'API.
+
