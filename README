@@ -2,11 +2,52 @@ Projet de création d'API dans le cadre du cours [DSIA-5102A] dispensé à l'ESI
 
 Description du projet :
 
-Dans le but d'obtenir plus rapidement les côtes des matchs qui nous intéressent, un premier algorithme se charge de les récupérer en utilisant un crawler.
+Dans le but d'obtenir plus rapidement les cotes des matchs qui nous intéressent, un premier algorithme se charge de les récupérer en utilisant un crawler.
 
 Dans un second temps, l'objectif de ce projet était de se familiariser avec la création d'API via Docker. Pour ce faire, j'ai décidé de créer 3 instances Docker.
 La première est une simple base de données, isolé pour éviter tout accès extérieur à l'API.
 La seconde est l'API en elle même. Paramêtrer pour écouter les requêtes faites sur le port 3005, elle fournit à toute utilisateur des informations sur les données
 stockées dans la base de données SQL.
 La troisième instance n'est d'autre qu'un interface web très simplifié, créer à l'aide de React, et fournissant une interface permettant des appels à l'API.
+
+J'ai travaillé sur différentes version d'essais, et la version finale se trouve dans le dossier ManoAPI_v2/manoapi2
+
+Les 3 instances définissant notre projets peuvent être lancé simplement grâce au fichier "docker-compose" situé dans le dossier ManoAPI_v2/manoapi2. Ce dernier se
+charge de la création du network commun, ainsi que de l'attribution des ports et des volumes.
+
+
+Notes importantes sur les aboutis du projet :
+
+Certaines parties du projet n'ont pas encore été développé. Par exemple, l'API et l'algorithme récupérant les cotes ne sont pour le moment pas connectés. 
+L'API permet simplement de choisir les équipes dont l'on souhaite récupérer les cotes grâce à l'interface graphique et de les stocker dans une base de données SQL.
+La base de données SQL est monté avec un volume ce qui permet la persévérance des données.
+
+La définition d'une API étant les règles CRUD, celles-ci sont implémentés dans l'interface graphique :
+- "Create" est appelé lorsque l'on ajoute une équipe
+- "Read" est appelé lorsqu'on actualise nos équipes
+- "Update" est fonctionnel mais n'a pas été implémenté sur l'interface graphique. Cependant, il est possible pour vous de tester son fonctionnement via le terminal.
+Pour cela, il faut récupérer l'identifiant de l'équipe qui se trouve dans la bdd SQL (mysql -u root, mot de passe : password), et de faire une requête PUT en spécifiant
+dans le corps de la requête, l'id de l'équipe (id) ainsi que le nouveau nom (name) au format json.
+- "Delete", qui est appelé lorsque l'on clique sur la croix situé sous le nom d'une équipe.
+
+L'API est basé sur une image node, fonctionnant avec express. D'autres fonctions seront ajoutés dans le futures, permettant d'augmenter le contrôle sur les actions à 
+appliquer sur la base de données, et ainsi renvoyer des informations plus précises aux utilisateurs de l'API.
+
+Concernant l'interface graphique, celle-ci a été implémenté très simplement, et de nombreux ajouts peuvent être fait pour améliorer le rendu visuel. Elle a été conçus 
+via le template create-react-app, et légèrement modifié pour ajouté des composasnts et avoir un affichage basique permettant l'utilisation de l'API.
+
+Nodemon a été utilisé pour permettre de coder plus rapidement la partie front-end.
+
+
+Problèmes Rencontrés :
+
+J'ai pu expérimenté certains problèmes qui ne sont pour le moment pas résolus. Concernant la base de données notamment, une base de données beaucoup plus étoffée se 
+trouve dans le dossier ManoAPI_v2/manoapi2/db mais sa création lors du démarrage de l'application n'a pas été réussi.
+
+L'utilisation de CORS a été complexe car le sujet n'est pas encore totalement maitrisé.
+
+Vous pouvez également retrouvez des images de certaines commandes ayant été effectué pour démontrer l'utilisation de certaines techniques.
+
+
+
 
