@@ -1,0 +1,27 @@
+version: "3"
+services:
+  app:
+    restart: on-failure
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://postgres:lefoudu489@postgres:5432/testDB
+      NODE_ENV: development
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    command: npm run start
+    volumes:
+      - .:/app/
+      - /app/node_modules
+
+  postgres:
+    image: postgres
+    ports:
+      - "35432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: lefoudu489
+      POSTGRES_DB: testDB
+    

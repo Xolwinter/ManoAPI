@@ -1,0 +1,51 @@
+version: "3.4"
+
+x-common-variables: &common_variables
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: lefoudu489
+  POSTGRES_DB: testDB
+  REACT_APP_SERVER_PORT: 8000
+
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "35432:5432"
+    environment:
+      <<: *common_variables
+      POSTGRES_HOST: localhost
+      POSTGRES_ROOT_PASSWORD: root
+    restart: unless-stopped
+    volumes:
+      - ./db/database.sql:/docker-entrypoint-initdb.d/database.sql
+  server:
+    build: ./server
+    depends_on:
+      - postgres
+    expose:
+      - 8000
+    environment:
+      <<: *common_variables
+      POSTGRES_HOST_IP: postgres
+    ports:
+      - 8000:8000 
+    volumes:
+      - ./server:/app
+    links:
+      - postgres
+    command: yarn start
+  client:
+    build: ./client
+    environment:
+      <<: *common_variables
+      NODE_PATH: src
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client/src:/app/src
+    links:
+      - server
+    command: yarn start
+

@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  mano-api:
+    image: node:12-alpine
+    command: sh -c "ls && npm install && node index.js"
+    ports:
+      - 3005:3005
+    working_dir: /manoapi/mano-api
+    volumes:
+      - ./:/manoapi
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_HOST=mysql
+      - MYSQL_DB=manoapi
+  mysql:
+    image: mysql:5.7
+    
+    volumes:
+      - manoapi-mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=manoapi
+  mano-app:
+    environment:
+      - WATCHPACK_POLLING=true
+    build:
+      context: ./mano-app
+    image: node:12-alpine
+    stdin_open: true
+    command: sh -c "ls && npm install && npm start"
+    ports:
+      - 3000:3000
+    working_dir: /mano-app/mano-app
+    volumes:
+      - ./:/mano-app
+volumes:
+  manoapi-mysql-data:
