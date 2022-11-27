@@ -1,0 +1,7 @@
+To run a database container : 
+
+docker run -d --network vincent/mano_api_network --network-alias mysql -v mano_api_mysql_data:/var/lib/mysql -e POSTGRES_PASSWORD=lefoudu489 -e POSTGRES_DATABASE=manoapi postgres:15.0
+
+To run the web app :
+
+docker run -dp 49160:8080 --network vincent/mano_api_network -e MYSQL_HOST=psql -e MYSQL_USER=postgres -e MYSQL_PASSWORD=lefoudu489 -e MYSQL_DB=manoapi_db vincent/mano_api_web_app
