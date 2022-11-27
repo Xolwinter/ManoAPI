@@ -1,3 +1,3 @@
-ManoAPI_v2/manoapi/*
-ManoAPI_v2/manoapi1/*
-node_modules
+/ManoAPI_v2/manoapi
+/ManoAPI_v2/manoapi1
+/node_modules
